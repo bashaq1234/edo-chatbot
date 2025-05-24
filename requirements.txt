@@ -1,0 +1,6 @@
+streamlit
+tensorflow
+nltk
+numpy
+scikit-learn
+pickle

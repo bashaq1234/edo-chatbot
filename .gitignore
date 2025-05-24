@@ -1,0 +1,42 @@
+# Ignore virtual environments and build folders
+env/
+venv/
+Lib/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Ignore editor/system files
+.vscode/
+.DS_Store
+Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.h5
+
+# Environments
+env/
+venv/
+.env
+
+# OS / IDE
+.DS_Store
+*.log
+*.swp
+*.bak
+*.tmp
+*.idea/
+*.vscode/
+
+# Node
+node_modules/
+
+# Output
+*.zip
+*.tar
+*.tar.gz
