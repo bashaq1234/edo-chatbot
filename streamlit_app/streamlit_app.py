@@ -8,8 +8,18 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
 # Download NLTK data (only needed once)
-nltk.download('punkt')
-nltk.download('wordnet')
+#import nltk
+from nltk.data import find
+
+def safe_nltk_download(resource):
+    try:
+        find(resource)
+    except LookupError:
+        nltk.download(resource)
+
+safe_nltk_download('tokenizers/punkt')
+safe_nltk_download('corpora/wordnet')
+
 
 lemmatizer = WordNetLemmatizer()
 
