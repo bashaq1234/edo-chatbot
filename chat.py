@@ -5,6 +5,7 @@ import numpy as np
 import nltk
 from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
+
 try:
     print("✅ Starting chatbot...")
     nltk.download('punkt')
@@ -22,20 +23,6 @@ try:
 except Exception as e:
     print("❌ Error occurred:", e)
     exit()
-
-
-# Download required NLTK data
-nltk.download('punkt')
-nltk.download('wordnet')
-
-# Initialize lemmatizer
-lemmatizer = WordNetLemmatizer()
-
-# Load trained model and data
-model = load_model("chatbot_model.h5")
-intents = json.load(open("intents.json", encoding="utf-8"))
-words = pickle.load(open("words.pkl", "rb"))
-classes = pickle.load(open("classes.pkl", "rb"))
 
 # Clean up user input
 def clean_up_sentence(sentence):
@@ -73,7 +60,7 @@ def get_response(intents_list, intents_json):
     return "Sorry, I didn't understand that."
 
 # Chat loop
-print("🤖 Edo State Address Chatbot is ready! Type 'quit' to exit.\n")
+print("🚀 Edo State Address Chatbot is ready! Type 'quit' to exit.\n")
 while True:
     message = input("You: ")
     if message.lower() == "quit":
