@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import json
 import random
 import numpy as np
@@ -7,19 +7,9 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
-# Download NLTK data (only needed once)
-#import nltk
-from nltk.data import find
-
-def safe_nltk_download(resource):
-    try:
-        find(resource)
-    except LookupError:
-        nltk.download(resource)
-
-safe_nltk_download('tokenizers/punkt')
-safe_nltk_download('corpora/wordnet')
-
+# Download required NLTK resources
+nltk.download("punkt")
+nltk.download("wordnet")
 
 lemmatizer = WordNetLemmatizer()
 
