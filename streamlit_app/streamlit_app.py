@@ -4,6 +4,7 @@ import random
 import numpy as np
 import pickle
 import nltk
+import os
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
@@ -13,14 +14,17 @@ nltk.download("wordnet")
 
 lemmatizer = WordNetLemmatizer()
 
-# Load data and model files from current directory
+# ✅ Get the absolute path to the directory where the script lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# ✅ Load data and model files from the correct folder
 try:
-    with open("intents.json", encoding="utf-8") as f:
+    with open(os.path.join(BASE_DIR, "intents.json"), encoding="utf-8") as f:
         intents = json.load(f)
 
-    model = load_model("chatbot_model.h5")
-    words = pickle.load(open("words.pkl", "rb"))
-    classes = pickle.load(open("classes.pkl", "rb"))
+    model = load_model(os.path.join(BASE_DIR, "chatbot_model.h5"))
+    words = pickle.load(open(os.path.join(BASE_DIR, "words.pkl"), "rb"))
+    classes = pickle.load(open(os.path.join(BASE_DIR, "classes.pkl"), "rb"))
 except Exception as e:
     st.error(f"Error loading model files: {e}")
     st.stop()
@@ -71,11 +75,14 @@ st.markdown("""
 
 col1, col2 = st.columns([1, 8])
 with col1:
-    st.image("logoedsg-removebg-preview.png", width=60)
+    st.image(os.path.join(BASE_DIR, "logoedsg-removebg-preview.png"), width=60)
 with col2:
     st.markdown('<div class="header-title">AskEdo1.o</div>', unsafe_allow_html=True)
 
-user_input = st.text_input("Ask a question about Edo State Government:")
+user_input = st.text_input(
+    "Ask a question to know about the MDAs location in Edo State Government:",
+    placeholder="e.g. Where is EdoDiDA located?"
+)
 
 if st.button("Get Response"):
     if user_input:

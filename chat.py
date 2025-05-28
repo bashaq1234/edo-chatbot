@@ -14,10 +14,10 @@ try:
     lemmatizer = WordNetLemmatizer()
 
     print("✅ Loading model and files...")
-    model = load_model("chatbot_model.h5")
-    intents = json.load(open("intents.json", encoding="utf-8"))
-    words = pickle.load(open("words.pkl", "rb"))
-    classes = pickle.load(open("classes.pkl", "rb"))
+    model = load_model("streamlit_app/chatbot_model.h5")
+    intents = json.load(open("streamlit_app/intents.json", encoding="utf-8"))
+    words = pickle.load(open("streamlit_app/words.pkl", "rb"))
+    classes = pickle.load(open("streamlit_app/classes.pkl", "rb"))
     print("✅ Model and data loaded successfully.\n")
 
 except Exception as e:
