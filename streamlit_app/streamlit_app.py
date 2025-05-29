@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 # Download required NLTK resources
 nltk.download("punkt")
 nltk.download("wordnet")
-
+nltk.download("omw-1.4")
 lemmatizer = WordNetLemmatizer()
 
 # ✅ Get the absolute path to the directory where the script lives
@@ -30,9 +30,12 @@ except Exception as e:
     st.stop()
 
 def clean_up_sentence(sentence):
-    sentence_words = nltk.word_tokenize(sentence)
-    return [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word.isalnum()]
-
+    try:
+        sentence_words = nltk.word_tokenize(sentence)
+        return [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word.isalnum()]
+    except LookupError as e:
+        st.error(f"NLTK tokenizer error: {e}")
+        return []
 def bow(sentence, words):
     sentence_words = clean_up_sentence(sentence)
     bag = [0] * len(words)
@@ -87,10 +90,12 @@ user_input = st.text_input(
 if st.button("Get Response"):
     if user_input:
         try:
-            ints = predict_class(user_input)
-            res = get_response(ints, intents)
-            st.success(f"🤖 {res}")
+            with st.spinner("Generating response..."):
+                ints = predict_class(user_input)
+                res = get_response(ints, intents)
+                st.success(f"🤖 {res}")
         except Exception as e:
             st.error(f"Error during response generation: {e}")
     else:
         st.warning("Please enter your question first.")
+
