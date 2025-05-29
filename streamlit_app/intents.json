@@ -13,6 +13,32 @@
         "The Office of the  Governor is located at Government House  Dennis Osadebey Avenue, GRA,  Benin City.."
       ]
     },
+     {
+      "tag": "hospital_management_agency",
+      "patterns": [
+        "What is the address of the Hospital Management Agency (HMA)?",
+        "Where can I find the Hospital Management Agency (HMA)?",
+        "Hospital Management Agency (HMA) address please",
+        "Where is theHospital Management Agency (HMA)?",
+        "Hospital Management Agency HMA location?"
+      ],
+      "responses": [
+        "The Hospital Management Agency (HMA), is located at te underground floor, Block B, Secretariat Complex, Sapele Road,  Benin City.."
+      ]
+    },
+     {
+      "tag": "christian_welfare_pilgrim_board",
+      "patterns": [
+        "What is the address of the Christian Welfare Pilgrim Board?",
+        "Where can I find the Christian Welfare Pilgrim Board?",
+        "Christian Welfare Pilgrim Board address please",
+        "Where is theChristian Welfare Pilgrim Board?",
+        "Christian Welfare Pilgrim Board location?"
+      ],
+      "responses": [
+        "The Christian Welfare Pilgrim Board is located at 1st Floor, Block D, Secretariat Complex, Sapele Road,  Benin City.."
+      ]
+    },
     {
       "tag": "john_odigie_oyegun_public_and_civil_service_academy_joopsa",
       "patterns": [
@@ -584,7 +610,7 @@
         "Ministry Of Health office location?"
       ],
       "responses": [
-        "The Ministry Of Health is located at 2rd and 3rd floor, block D, State SAecretariat Complex Sapele Road, Benin."
+        "The Ministry Of Health is located at 2nd and 3rd Floor, Block D, State SAecretariat Complex Sapele Road, Benin."
       ]
     },
     {
@@ -889,7 +915,7 @@
         "Where is ICTA's office?"
       ],
       "responses": [
-        "The Information Communication and Technology Agency is located at Gabriel Igbenedion Street, GRA, Behind JOOPSA.."
+        "The Information Communication and Technology Agency is located at No 1 Okada Avenue, GRA, Behind JOOPSA."
       ]
     },
     {
