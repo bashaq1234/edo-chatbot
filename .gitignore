@@ -1,41 +1,40 @@
 # Ignore virtual environments and build folders
+chatbot2025/
 env/
 venv/
 Lib/
+
+# Python cache and bytecode files
 __pycache__/
+*.py[cod]
 *.pyc
 *.pyo
 *.pyd
+
+# Databases and logs
 *.sqlite3
 *.log
 
-# Ignore editor/system files
+# Editor / IDE files
 .vscode/
-.DS_Store
-Thumbs.db
-# Python
-__pycache__/
-*.py[cod]
-
-
-# Environments
-env/
-venv/
-.env
-
-# OS / IDE
-.DS_Store
-*.log
+.idea/
 *.swp
 *.bak
 *.tmp
-*.idea/
-*.vscode/
 
-# Node
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Environment files
+.env
+
+# Node.js dependencies
 node_modules/
 
-# Output
+# Archive outputs
 *.zip
 *.tar
 *.tar.gz
