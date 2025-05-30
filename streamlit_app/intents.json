@@ -538,11 +538,12 @@
     {
       "tag": "ministry_of_information_and_communication",
       "patterns": [
-        "What is the address of Ministry Of Information And Communication?",
-        "Where can I find the Ministry Of Information And Communication?",
-        "Ministry Of Information And Communication address please",
-        "Where is the Ministry Of Information And Communication?",
-        "Ministry Of Information And Communication office location?"
+        "What is the address of Ministry Of Information And Communication (MIC)?",
+        "Where can I find the Ministry Of Information And Communication (MIC)?",
+        "Ministry Of Information And Communication address please(MIC)?",
+        "Where is the Ministry Of Information And Communication (MIC)?",
+        "Ministry Of Information And Communication office location(MIC)?",
+        "Where is MIC?"
       ],
       "responses": [
         "The Ministry Of Information And Communication is located at Block B, 4th Floor, Secretariat Complex, Sapele Road, Benin City."
@@ -649,7 +650,7 @@
         "Ministry Of Works office location?"
       ],
       "responses": [
-        "The Ministry Of Works is located at 18 Sapele Road, Benin City, Edo State."
+        "The Ministry Of Works is located at No. 18 Sapele Road, Benin City, Edo State."
       ]
     },
     {
@@ -835,7 +836,7 @@
         "Where is EDODiDA's office?"
       ],
       "responses": [
-        "The Edo State Digital Governance and Data Management Agency is located at No. 17 Vincent Agenmomen Avenue  Beside 4 brigade, ESIPO Compound, Benin City.."
+        "The Edo State Digital Governance and Data Management Agency is located at No. 17 Vincent Agenmomen Road, GRA,  Beside 4 Brigade, ESIPO Compound, Benin City.."
       ]
     },
     {
@@ -915,7 +916,7 @@
         "Where is ICTA's office?"
       ],
       "responses": [
-        "The Information Communication and Technology Agency is located at No 1 Okada Avenue, GRA, Behind JOOPSA."
+        "The Information Communication and Technology Agency is located at No. 1 Okada Avenue, GRA,  Benin City."
       ]
     },
     {
