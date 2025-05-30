@@ -1,40 +1,71 @@
-# Ignore virtual environments and build folders
-chatbot2025/
-env/
-venv/
-Lib/
+# ===============================
+# Python cache, build, and envs
+# ===============================
 
-# Python cache and bytecode files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyc
 *.pyo
 *.pyd
 
-# Databases and logs
-*.sqlite3
-*.log
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
 
-# Editor / IDE files
+# Virtual environments
+env/
+venv/
+chatbot2025/
+.env
+
+# SQLite database files
+*.sqlite3
+
+# ===============================
+# Logs and temporary files
+# ===============================
+
+*.log
+*.tmp
+*.temp
+
+# ===============================
+# Editor and OS files
+# ===============================
+
 .vscode/
-.idea/
+.idea/           # PyCharm
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Jupyter Notebook checkpoints
+# ===============================
+
+.ipynb_checkpoints/
+
+# ===============================
+# Data files (optional: ignore if large data files)
+# ===============================
+
+*.csv
+*.json
+
+
+# OS / IDE
+.DS_Store
+*.log
 *.swp
 *.bak
 *.tmp
+*.idea/
+*.vscode/
 
-# macOS files
-.DS_Store
-
-# Windows files
-Thumbs.db
-
-# Environment files
-.env
-
-# Node.js dependencies
+# Node
 node_modules/
 
-# Archive outputs
+# Output
 *.zip
 *.tar
 *.tar.gz
