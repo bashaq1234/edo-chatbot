@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 nltk.data.path.append('./nltk_data')
 
 # ✅ Only needed temporarily to fetch missing data like 'punkt_tab'
-nltk.download('punkt', download_dir='./nltk_data')
+#nltk.download('punkt', download_dir='./nltk_data')
 from tensorflow.keras.models import load_model
 
 # Download required NLTK resources
