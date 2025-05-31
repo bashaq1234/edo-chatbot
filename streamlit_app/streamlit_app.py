@@ -6,12 +6,18 @@ import pickle
 import nltk
 import os
 from nltk.stem import WordNetLemmatizer
+nltk.data.path.append('./nltk_data')
+
+# ✅ Only needed temporarily to fetch missing data like 'punkt_tab'
+nltk.download('punkt', download_dir='./nltk_data')
 from tensorflow.keras.models import load_model
 
 # Download required NLTK resources
-nltk.download("punkt")
-nltk.download("wordnet")
-nltk.download("omw-1.4")
+#nltk.data.path.append('./nltk_data')
+#nltk.download('punkt_tab', download_dir='./nltk_data')
+#nltk.download("punkt")
+#nltk.download("wordnet")
+#nltk.download("omw-1.4")
 lemmatizer = WordNetLemmatizer()
 
 # ✅ Get the absolute path to the directory where the script lives
