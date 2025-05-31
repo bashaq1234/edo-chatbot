@@ -6,24 +6,17 @@ import pickle
 import nltk
 import os
 from nltk.stem import WordNetLemmatizer
-nltk.data.path.append('./nltk_data')
-
-# ✅ Only needed temporarily to fetch missing data like 'punkt_tab'
-#nltk.download('punkt', download_dir='./nltk_data')
 from tensorflow.keras.models import load_model
 
-# Download required NLTK resources
-#nltk.data.path.append('./nltk_data')
-#nltk.download('punkt_tab', download_dir='./nltk_data')
-#nltk.download("punkt")
-#nltk.download("wordnet")
-#nltk.download("omw-1.4")
+# === Setup paths ===
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+NLTK_DATA_PATH = os.path.join(os.path.dirname(BASE_DIR), 'nltk_data')
+nltk.data.path.append(NLTK_DATA_PATH)
+
+# === Initialize Lemmatizer ===
 lemmatizer = WordNetLemmatizer()
 
-# ✅ Get the absolute path to the directory where the script lives
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# ✅ Load data and model files from the correct folder
+# === Load Data and Model Files ===
 try:
     with open(os.path.join(BASE_DIR, "intents.json"), encoding="utf-8") as f:
         intents = json.load(f)
@@ -32,16 +25,18 @@ try:
     words = pickle.load(open(os.path.join(BASE_DIR, "words.pkl"), "rb"))
     classes = pickle.load(open(os.path.join(BASE_DIR, "classes.pkl"), "rb"))
 except Exception as e:
-    st.error(f"Error loading model files: {e}")
+    st.error(f"❌ Error loading model or data files: {e}")
     st.stop()
 
+# === NLP Utilities ===
 def clean_up_sentence(sentence):
     try:
         sentence_words = nltk.word_tokenize(sentence)
         return [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word.isalnum()]
     except LookupError as e:
-        st.error(f"NLTK tokenizer error: {e}")
+        st.error(f"❌ NLTK tokenizer error: {e}")
         return []
+
 def bow(sentence, words):
     sentence_words = clean_up_sentence(sentence)
     bag = [0] * len(words)
@@ -61,14 +56,14 @@ def predict_class(sentence):
 
 def get_response(intents_list, intents_json):
     if not intents_list:
-        return "Sorry, I couldn't understand. Please try again."
+        return "❓ Sorry, I couldn't understand. Please try again."
     tag = intents_list[0]['intent']
     for intent in intents_json['intents']:
         if intent['tag'] == tag:
             return random.choice(intent['responses'])
-    return "Sorry, I didn't understand that."
+    return "❓ Sorry, I didn't understand that."
 
-# Streamlit UI setup
+# === Streamlit UI Setup ===
 st.set_page_config(page_title="AskEdo1.o", page_icon="🤖", layout="centered")
 
 st.markdown("""
@@ -88,20 +83,20 @@ with col1:
 with col2:
     st.markdown('<div class="header-title">AskEdo1.o</div>', unsafe_allow_html=True)
 
+# === Input + Interaction ===
 user_input = st.text_input(
     "Ask a question to know about the MDAs location in Edo State Government:",
     placeholder="e.g. Where is EdoDiDA located?"
 )
 
 if st.button("Get Response"):
-    if user_input:
+    if user_input.strip():
         try:
-            with st.spinner("Generating response..."):
+            with st.spinner("🤔 Generating response..."):
                 ints = predict_class(user_input)
                 res = get_response(ints, intents)
                 st.success(f"🤖 {res}")
         except Exception as e:
-            st.error(f"Error during response generation: {e}")
+            st.error(f"❌ Error during response generation: {e}")
     else:
-        st.warning("Please enter your question first.")
-
+        st.warning("⚠️ Please enter your question first.")
