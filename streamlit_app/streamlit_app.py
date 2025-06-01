@@ -1,18 +1,22 @@
-import streamlit as st
+import os
 import json
 import random
 import numpy as np
 import pickle
 import nltk
-import os
+import streamlit as st
+from nltk.stem import WordNetLemmatizer
+from tensorflow.keras.models import load_model
 
+# === Page Config ===
 st.set_page_config(page_title="AskEdo1.o", page_icon="🤖", layout="centered")
 
-# === Setup paths ===
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # streamlit_app folder
-NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))  # one level up, then nltk_data
+# === Path Setup ===
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))
 nltk.data.path.append(NLTK_DATA_PATH)
-# === Sanity check for NLTK setup ===
+
+# === NLTK Sanity Check ===
 st.write("🔍 Checking NLTK setup...")
 st.write("NLTK data paths:", nltk.data.path)
 
@@ -31,16 +35,10 @@ if missing_resources:
 else:
     st.success("✅ All required NLTK resources are available.")
 
-
-# Check if punkt tokenizer is available locally; if not, download it to NLTK_DATA_PATH
-
-from nltk.stem import WordNetLemmatizer
-from tensorflow.keras.models import load_model
-
 # === Initialize Lemmatizer ===
 lemmatizer = WordNetLemmatizer()
 
-# === Load Data and Model Files ===
+# === Load Assets ===
 try:
     with open(os.path.join(BASE_DIR, "intents.json"), encoding="utf-8") as f:
         intents = json.load(f)
@@ -87,9 +85,7 @@ def get_response(intents_list, intents_json):
             return random.choice(intent['responses'])
     return "❓ Sorry, I didn't understand that."
 
-# === Streamlit UI Setup ===
-
-
+# === Streamlit UI ===
 st.markdown("""
     <style>
         body { background-color: #f5fff5; }
@@ -107,7 +103,7 @@ with col1:
 with col2:
     st.markdown('<div class="header-title">AskEdo1.o</div>', unsafe_allow_html=True)
 
-# === Input + Interaction ===
+# === User Input ===
 user_input = st.text_input(
     "Ask a question to know about the MDAs location in Edo State Government:",
     placeholder="e.g. Where is EdoDiDA located?"
