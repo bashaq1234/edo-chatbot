@@ -4,6 +4,10 @@ import random
 import numpy as np
 import pickle
 import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir=NLTK_DATA_PATH)
 import os
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
@@ -48,13 +52,6 @@ def bow(sentence, words):
 
 def predict_class(sentence):
     p = bow(sentence, words)
-
-    # ✅ Shape check before prediction
-    expected_input_size = model.input_shape[1]
-    if p.shape[0] != expected_input_size:
-        st.error(f"⚠️ Input size mismatch: Model expects {expected_input_size} features but got {p.shape[0]}. Please retrain or update 'words.pkl'.")
-        return []
-
     res = model.predict(np.array([p]))[0]
     threshold = 0.25
     results = [(i, r) for i, r in enumerate(res) if r > threshold]
