@@ -1,21 +1,44 @@
-import streamlit as st 
+import streamlit as st
 import json
 import random
 import numpy as np
 import pickle
 import nltk
+import os
+
+# === Setup paths ===
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # streamlit_app folder
+NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))  # one level up, then nltk_data
+nltk.data.path.append(NLTK_DATA_PATH)
+# === Sanity check for NLTK setup ===
+st.write("🔍 Checking NLTK setup...")
+st.write("NLTK data paths:", nltk.data.path)
+
+required_resources = ['tokenizers/punkt', 'corpora/wordnet']
+missing_resources = []
+
+for resource in required_resources:
+    try:
+        nltk.data.find(resource)
+    except LookupError:
+        missing_resources.append(resource)
+
+if missing_resources:
+    st.error(f"❌ Missing NLTK resources: {missing_resources}. Please ensure these are in the nltk_data folder.")
+    st.stop()
+else:
+    st.success("✅ All required NLTK resources are available.")
+
+
+# Check if punkt tokenizer is available locally; if not, download it to NLTK_DATA_PATH
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt')
-import os
+    #nltk.download('punkt', download_dir=NLTK_DATA_PATH)
+    st.error("❌ NLTK 'punkt' tokenizer not found. Please make sure nltk_data is complete.")
+    st.stop()
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
-
-# === Setup paths ===
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-NLTK_DATA_PATH = os.path.join(os.path.dirname(BASE_DIR), 'nltk_data')
-nltk.data.path.append(NLTK_DATA_PATH)
 
 # === Initialize Lemmatizer ===
 lemmatizer = WordNetLemmatizer()
