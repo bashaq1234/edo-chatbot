@@ -7,7 +7,7 @@ import nltk
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt', download_dir=NLTK_DATA_PATH)
+    nltk.download('punkt')
 import os
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
