@@ -48,6 +48,13 @@ def bow(sentence, words):
 
 def predict_class(sentence):
     p = bow(sentence, words)
+
+    # ✅ Shape check before prediction
+    expected_input_size = model.input_shape[1]
+    if p.shape[0] != expected_input_size:
+        st.error(f"⚠️ Input size mismatch: Model expects {expected_input_size} features but got {p.shape[0]}. Please retrain or update 'words.pkl'.")
+        return []
+
     res = model.predict(np.array([p]))[0]
     threshold = 0.25
     results = [(i, r) for i, r in enumerate(res) if r > threshold]
