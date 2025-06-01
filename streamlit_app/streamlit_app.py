@@ -6,6 +6,8 @@ import pickle
 import nltk
 import os
 
+st.set_page_config(page_title="AskEdo1.o", page_icon="🤖", layout="centered")
+
 # === Setup paths ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # streamlit_app folder
 NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))  # one level up, then nltk_data
@@ -31,12 +33,7 @@ else:
 
 
 # Check if punkt tokenizer is available locally; if not, download it to NLTK_DATA_PATH
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    #nltk.download('punkt', download_dir=NLTK_DATA_PATH)
-    st.error("❌ NLTK 'punkt' tokenizer not found. Please make sure nltk_data is complete.")
-    st.stop()
+
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
@@ -91,7 +88,7 @@ def get_response(intents_list, intents_json):
     return "❓ Sorry, I didn't understand that."
 
 # === Streamlit UI Setup ===
-st.set_page_config(page_title="AskEdo1.o", page_icon="🤖", layout="centered")
+
 
 st.markdown("""
     <style>
