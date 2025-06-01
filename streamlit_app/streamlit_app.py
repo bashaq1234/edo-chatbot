@@ -17,8 +17,8 @@ NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))
 nltk.data.path.append(NLTK_DATA_PATH)
 
 # === NLTK Sanity Check ===
-st.write("🔍 Checking NLTK setup...")
-st.write("NLTK data paths:", nltk.data.path)
+#st.write("🔍 Checking NLTK setup...")
+#st.write("NLTK data paths:", nltk.data.path)
 
 required_resources = ['tokenizers/punkt', 'corpora/wordnet']
 missing_resources = []
@@ -33,10 +33,10 @@ if missing_resources:
     st.error(f"❌ Missing NLTK resources: {missing_resources}. Please ensure these are in the nltk_data folder.")
     st.stop()
 else:
-    st.success("✅ All required NLTK resources are available.")
+    #st.success("✅ All required NLTK resources are available.")
 
 # === Initialize Lemmatizer ===
-lemmatizer = WordNetLemmatizer()
+    lemmatizer = WordNetLemmatizer()
 
 # === Load Assets ===
 try:
