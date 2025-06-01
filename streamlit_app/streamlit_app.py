@@ -6,6 +6,7 @@ import pickle
 import nltk
 import streamlit as st
 from nltk.stem import WordNetLemmatizer
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from tensorflow.keras.models import load_model
 
 # === Page Config ===
