@@ -1,4 +1,7 @@
+# === Force TensorFlow to use CPU ===
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # MUST come before importing TensorFlow
+
 import json
 import random
 import numpy as np
@@ -6,7 +9,6 @@ import pickle
 import nltk
 import streamlit as st
 from nltk.stem import WordNetLemmatizer
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from tensorflow.keras.models import load_model
 
 # === Page Config ===
@@ -18,9 +20,6 @@ NLTK_DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'nltk_data'))
 nltk.data.path.append(NLTK_DATA_PATH)
 
 # === NLTK Sanity Check ===
-#st.write("🔍 Checking NLTK setup...")
-#st.write("NLTK data paths:", nltk.data.path)
-
 required_resources = ['tokenizers/punkt', 'corpora/wordnet']
 missing_resources = []
 
@@ -34,9 +33,6 @@ if missing_resources:
     st.error(f"❌ Missing NLTK resources: {missing_resources}. Please ensure these are in the nltk_data folder.")
     st.stop()
 else:
-    #st.success("✅ All required NLTK resources are available.")
-
-# === Initialize Lemmatizer ===
     lemmatizer = WordNetLemmatizer()
 
 # === Load Assets ===
