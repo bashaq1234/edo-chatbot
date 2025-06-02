@@ -13,6 +13,7 @@ try:
     find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+from nltk.tokenize import sent_tokenize
 import streamlit as st
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
@@ -56,8 +57,12 @@ except Exception as e:
 # === NLP Utilities ===
 def clean_up_sentence(sentence):
     try:
-        sentence_words = nltk.word_tokenize(sentence)
-        return [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word.isalnum()]
+        sentence_tokens = sent_tokenize(sentence)
+        sentence_words = []
+        for sent in sentence_tokens:
+            words = nltk.word_tokenize(sent)
+            sentence_words.extend([lemmatizer.lemmatize(word.lower()) for word in words if word.isalnum()])
+        return sentence_words
     except LookupError as e:
         st.error(f"❌ NLTK tokenizer error: {e}")
         return []

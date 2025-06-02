@@ -13,6 +13,19 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+    {
+      "tag": "office_of_the_edo_state_muslims_pilgrim_welfare_board",
+      "patterns": [
+        "What is the address of Office of the edo state muslim pilgrims welfare board?",
+        "Where can I find the Office of the Edo State Muslim Pilgrims Welfare Board?",
+        "Office of the  Edo State Muslim Pilgrims Welfare Boardaddress please",
+        "Where is the Office of the  Muslim Pilgrims Welfare Board?",
+        "Office of the  Muslims Welfare Board  location?"
+      ],
+      "responses": [
+        "The Office of the  Edo State Muslim Pilgrims Welfare Board is located at Dumez, Off Sapele Road,  Benin City, Edo State."
+      ]
+    },
      {
       "tag": "hospital_management_agency",
       "patterns": [
@@ -314,7 +327,7 @@
         "Where can I find the Edo State Health Insurance Commission?",
         "Edo State Health Insurance Commission address please",
         "Where is the Edo State Health Insurance Commission?",
-        "Edo State Health Insurance Commission office location?",
+        "Edo State Health Insurance Commission  Edo HISoffice location?",
         "Where is EdoHIS's office?"
       ],
       "responses": [
@@ -358,7 +371,7 @@
         "Where is ESTA's office?"
       ],
       "responses": [
-        "The Edo State Transport Authority (ESTA) is located at 3rd Floor Block A, Pakm House, Secretariat Complex, Sapele Road, Benin City, Edo State."
+        "The Edo State Transport Authority (ESTA) is located at 3rd Floor Block A, Palm House, Secretariat Complex, Sapele Road, Benin City, Edo State."
       ]
     },
     {
@@ -368,7 +381,7 @@
         "Where can I find the Edo State Geographic Information Service (EDOGIS)?",
         "Edo State Geographic Information Service (EDOGIS) address please",
         "Where is the Edo State Geographic Information Service (EDOGIS)?",
-        "Edo State Geographic Information Service (EDOGIS) office location?",
+        "Edo State Geographic Information Service (EDO GIS) office location?",
         "Where is EDOGIS's office?"
       ],
       "responses": [
@@ -381,7 +394,7 @@
         "What is the address of Edo State Emergency Management Agency (EDOSEMA)?",
         "Where can I find the Edo State Emergency Management Agency (EDOSEMA)?",
         "Edo State Emergency Management Agency (EDOSEMA) address please",
-        "Where is the Edo State Emergency Management Agency (EDOSEMA)?",
+        "Where is the Edo State Emergency Management Agency (EDO SEMA)?",
         "Edo State Emergency Management Agency (EDOSEMA) office location?",
         "Where is EDOSEMA's office?"
       ],
@@ -543,7 +556,8 @@
         "Ministry Of Information And Communication address please(MIC)?",
         "Where is the Ministry Of Information And Communication (MIC)?",
         "Ministry Of Information And Communication office location(MIC)?",
-        "Where is MIC?"
+        "Where is MIC?",
+        "location of Edo MIC?"
       ],
       "responses": [
         "The Ministry Of Information And Communication is located at Block B, 4th Floor, Secretariat Complex, Sapele Road, Benin City."
@@ -556,7 +570,8 @@
         "Where can I find the Ministry Of Education?",
         "Ministry Of Education address please",
         "Where is the Ministry Of Education?",
-        "Ministry Of Education office location?"
+        "Ministry Of Education office location?",
+        "Where is Edo MOE?"
       ],
       "responses": [
         "The Ministry Of Education is located at Block B, 6th Floor Secretariat  Complex, Sapele Road, Benin City."
@@ -605,10 +620,10 @@
       "tag": "ministry_of_health",
       "patterns": [
         "What is the address of Ministry Of Health?",
-        "Where can I find the Ministry Of Health?",
+        "Where can I find the Ministry Of Health( Edo MOH)?",
         "Ministry Of Health address please",
         "Where is the Ministry Of Health?",
-        "Ministry Of Health office location?"
+        "Ministry Of Health (MOH)office location?"
       ],
       "responses": [
         "The Ministry Of Health is located at 2nd and 3rd Floor, Block D, State Secretariat Complex Sapele Road, Benin."
@@ -884,7 +899,7 @@
         "What is the address of Edo State Skill Development Agency?",
         "Where can I find the Edo State Skill Development Agency?",
         "Edo State Skill Development Agency address please",
-        "Where is the Edo State Skill Development Agency?",
+        "Where is the Edo State Skill Development Agency(Edo Jobs)?",
         "Edo State Skill Development Agency office location?",
         "Where is EdoJobs's office?"
       ],
