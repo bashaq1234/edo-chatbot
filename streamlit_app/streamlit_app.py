@@ -7,6 +7,12 @@ import random
 import numpy as np
 import pickle
 import nltk
+from nltk.data import find
+
+try:
+    find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 import streamlit as st
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
