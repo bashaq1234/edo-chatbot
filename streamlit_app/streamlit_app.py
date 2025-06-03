@@ -7,12 +7,6 @@ import random
 import numpy as np
 import pickle
 import nltk
-from nltk.data import find
-
-try:
-    find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 import streamlit as st
 from nltk.stem import WordNetLemmatizer
