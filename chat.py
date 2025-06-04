@@ -3,7 +3,8 @@ import random
 import pickle
 import numpy as np
 import nltk
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+#import os
+#os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
 
