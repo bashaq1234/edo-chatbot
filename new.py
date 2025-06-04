@@ -92,6 +92,7 @@ model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
 
 # === Save model and data ===
 model.save(model_file)
+model.save("chatbot_model_v2.h5", include_optimizer=False)
 pickle.dump(words, open(words_file, "wb"))
 pickle.dump(classes, open(classes_file, "wb"))
 
