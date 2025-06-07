@@ -41,7 +41,7 @@ try:
     with open(os.path.join(BASE_DIR, "intents.json"), encoding="utf-8") as f:
         intents = json.load(f)
 
-    model = load_model(os.path.join(BASE_DIR, "chatbot_model_v2.h5"))
+    model = load_model(os.path.join(BASE_DIR, "chatbot_model.h5"))  # <-- Here
     words = pickle.load(open(os.path.join(BASE_DIR, "words.pkl"), "rb"))
     classes = pickle.load(open(os.path.join(BASE_DIR, "classes.pkl"), "rb"))
 except Exception as e:

@@ -13,6 +13,19 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+     {
+      "tag": "are_you_stupid_foolish_mad_crazy",
+      "patterns": [
+        "Dont be stupid?",
+        "Foolish you are?",
+        "Get out from here idiot!",
+        "Crazy thing?",
+        "Are you crazy,stupid,foolish?"
+      ],
+      "responses": [
+        "Sorry! I dont have feelings, but I do have emotional intelligence and human skills."
+      ]
+    },
     {
       "tag": "office_of_the_edo_state_muslims_pilgrim_welfare_board",
       "patterns": [
