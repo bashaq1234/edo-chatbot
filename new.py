@@ -1,8 +1,14 @@
+import streamlit as st
 import os
 import json
 import random
 import numpy as np
 import nltk
+# Safe download in Streamlit Cloud
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
