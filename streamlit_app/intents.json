@@ -14,6 +14,19 @@
       ]
     },
      {
+      "tag": "you_are_good",
+      "patterns": [
+        "You Served me Well",
+        "I appreciate?",
+        "Thanks",
+        "Wl Done",
+        "Good bye?"
+      ],
+      "responses": [
+        "Thank you, and welcome!."
+      ]
+    },
+     {
       "tag": "are_you_stupid_foolish_mad_crazy",
       "patterns": [
         "Dont be stupid?",
@@ -753,8 +766,8 @@
       "patterns": [
         "What is the address of Ministry Of Agriculture And Food Security?",
         "Where can I find the Ministry Of Agriculture And Food Security?",
-        "Ministry Of Agriculture And Food Security address please",
-        "Where is the Ministry Of Agriculture And Food Security?",
+        "Ministry Of Agriculture And Food Security address please?",
+        "Where is the Ministry Of Agriculture?",
         "Ministry Of Agriculture And Food Security office location?"
       ],
       "responses": [
