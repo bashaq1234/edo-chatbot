@@ -13,13 +13,26 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+    {
+      "tag": "edojobs_center_in_auchi",
+      "patterns": [
+        "What is the address of Edojobs Center in Auchi?",
+        "Where can I find the Office of Edojobs in Auchi?",
+        "Edojobs in Auchi address please",
+        "Where is the Office of Edojobs in Auchi?",
+        "Edojobs in Auchi office location?"
+      ],
+      "responses": [
+        "EdoJobs Center, Along Etsako West Local Government Secretariat Road, before the Police Station , Auchi, Edo State."
+      ]
+    },
      {
       "tag": "you_are_good",
       "patterns": [
         "You Served me Well",
         "I appreciate?",
         "Thanks",
-        "Wl Done",
+        "Well Done",
         "Good bye?"
       ],
       "responses": [
