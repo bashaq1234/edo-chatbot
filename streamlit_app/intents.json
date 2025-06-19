@@ -784,7 +784,7 @@
         "Ministry Of Agriculture And Food Security office location?"
       ],
       "responses": [
-        "The Ministry Of Agriculture And Food Security is located at Ezoti Street, Oredo lga, Benin City, Edo State."
+        "The Ministry Of Agriculture And Food Security is located at ADP Junction, Airport Road,  Benin City, Edo State."
       ]
     },
     {
@@ -867,16 +867,16 @@
       ]
     },
     {
-      "tag": "edo_state_liaison_office_abuja",
+      "tag": "edo_state_liason_office_abuja",
       "patterns": [
-        "What is the address of Edo State Liaison Office  Abuja?",
-        "Where can I find the Edo State Liaison Office  Abuja?",
+        "What is the address of Edo State Liason Office  Abuja?",
+        "Where can I find the Edo State Liason Office  Abuja?",
         "Edo State Liaison Office  Abuja address please",
         "Where is the Edo State Liaison Office  Abuja?",
-        "Edo State Liaison Office  Abuja office location?"
+        "Edo State Liason Office  Abuja office location?"
       ],
       "responses": [
-        "The Edo State Liaison Office  Abuja is located at Plot 75, Ralph Shodeinde Street, Central Business District, Abuja."
+        "The Edo State Liason Office  Abuja is located at Plot 75, Ralph Shodeinde Street, Central Business District, Abuja."
       ]
     },
     {
