@@ -13,6 +13,19 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+     {
+      "tag": "state_secondary_education_board",
+      "patterns": [
+        "What is the address of the State Secondary Education Board SSEB?",
+        "Where can I find the State Secondary Education Board (SSEB)?",
+        "State Secondary Education Board address please (sseb)",
+        "Where is the Office of the Governor (sseb)?",
+        "Office of the  Governor office location (sseb)?"
+      ],
+      "responses": [
+        "The Board  of the  State Secondary Education Board, is located at Block B, 4tH   floor, Secretariat Complex, Sapele Road,  Benin City."
+      ]
+    },
     {
       "tag": "edojobs_center_in_auchi",
       "patterns": [
@@ -32,6 +45,7 @@
         "You Served me Well",
         "I appreciate?",
         "Thanks",
+        "Thank you askEdo",
         "Well Done",
         "Good bye?"
       ],
@@ -137,7 +151,7 @@
       "tag": "edo_state_flood_erosion_and_watershed_management_agency",
       "patterns": [
         "What is the address of edo state flood erosion and watershed management agency (EdoFEWMA)?",
-        "Where can I find the edo state flood erosion and watershed management agency (EdoFEWMA)?",
+        "Where can I find the edo state flood erosion and watershed management agency  Edofewma?",
         "edo state flood erosion and watershed management agency EdoFEWMA address please",
         "Where is the edo state flood erosion and watershed management agency (edo state flood erosion and watershed management agency (EdoFEWMA))?",
         "Give me the location of  EdoFEWMA?"
@@ -157,7 +171,7 @@
         "Give me the address or location of edo innovate office ?"
       ],
       "responses": [
-        "The Office of the edo innovate is located at ICE Road , Benin City Edo State. "
+        "The Office of the edo innovate is located at ICE Road ,Wire Road Junction, Benin City, Edo State. "
       ]
     },
      {
@@ -797,7 +811,7 @@
         "Ministry Of Women Affairs and Social Development office location?"
       ],
       "responses": [
-        "The Ministry Of Women Affairs and Social Development is located at Block C, 1st Floor, Secretariat Complex."
+        "The Ministry Of Women Affairs and Social Development is located at Block C, Ground Floor, Secretariat Complex."
       ]
     },
     {
@@ -867,16 +881,16 @@
       ]
     },
     {
-      "tag": "edo_state_liason_office_abuja",
+      "tag": "edo_state_liaison_office_abuja",
       "patterns": [
         "What is the address of Edo State Liason Office  Abuja?",
         "Where can I find the Edo State Liason Office  Abuja?",
         "Edo State Liaison Office  Abuja address please",
         "Where is the Edo State Liaison Office  Abuja?",
-        "Edo State Liason Office  Abuja office location?"
+        "Edo State Liaison Office  Abuja office location?"
       ],
       "responses": [
-        "The Edo State Liason Office  Abuja is located at Plot 75, Ralph Shodeinde Street, Central Business District, Abuja."
+        "The Edo State Liaison Office  Abuja is located at Plot 75, Ralph Shodeinde Street, Central Business District, Abuja."
       ]
     },
     {

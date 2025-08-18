@@ -1,3 +1,4 @@
+#invoke the venv bf cd into chatbot2025 folder, chatbot2025\Scripts\activate
 import streamlit as st
 import os
 import json
