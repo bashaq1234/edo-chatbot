@@ -13,6 +13,20 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+    {
+      "tag": "Ministry_of_Youth_Affairs",
+      "patterns": [
+        "What is the address of the Ministry of Youth Affairs?",
+        "Where can I find the Ministry of Youth Affairs?",
+        "Ministry of Youth Affairs address please",
+        "Where is the Ministry of Youth Affairs?",
+        "Office of the  Ministry of Youth Affairs?"
+      ],
+      "responses": [
+        "The Ministry of Youth Affairs is located at 8th Floor, Block B, State Secrtetariat Complex, Sapele Road,  Benin City."
+      ]
+    },
+    
      {
       "tag": "state_secondary_education_board",
       "patterns": [
@@ -23,7 +37,7 @@
         "Office of the  Governor office location (sseb)?"
       ],
       "responses": [
-        "The Board  of the  State Secondary Education Board, is located at Block B, 4tH   floor, Secretariat Complex, Sapele Road,  Benin City."
+        "The Board  of the  State Secondary Education Board, is located at Education Hub, Iyaro, New Benin,   Benin City."
       ]
     },
     {
@@ -175,16 +189,16 @@
       ]
     },
      {
-      "tag": "ministry_of_budget",
+      "tag": "ministry_of_budget_and_ Economy Planning",
       "patterns": [
-        "What is the address of the Ministry of Budget?",
-        "Where can I find the Ministry of Budget?",
-        "Ministry of Budget address please",
-        "Where is the Office Ministry of Budget?",
-        "Ministry of Budget office location?"
+        "What is the address of the Ministry of Budget and Economy Planning?",
+        "Where can I find the Ministry of Budget and Economy Planning?",
+        "Ministry of Budget and Economy Planning address please",
+        "Where is the Office Ministry of Budget and Economy Planning?",
+        "Ministry of Budget and Economy Planning office location?"
       ],
       "responses": [
-        "The Ministry of Budget is located at  1st Floor, Block B, Secretariat Complex, Sapele Road Benin City, Edo State."
+        "The Ministry of Budget and Economy Planning is located at  1st Floor, Block B, Secretariat Complex, Sapele Road Benin City, Edo State."
       ]
     },
     {
@@ -304,7 +318,7 @@
         "Where is BTVE's office?"
       ],
       "responses": [
-        "The Edo State Board For Technical Vocational Education is located at Block D, 5th Floor, Secretariat   Building, Benin City.."
+        "The Edo State Board For Technical Vocational Education is located is located at Education Hub, Iyaro, New Benin,   Benin City. Benin City.."
       ]
     },
     {
@@ -322,16 +336,16 @@
       ]
     },
     {
-      "tag": "edo_state_arts_culture_and_tourism",
+      "tag": "edo_state_arts_culture_and_creative_economy",
       "patterns": [
-        "What is the address of Edo State Arts, Culture and Tourism?",
-        "Where can I find the Edo State Arts, Culture and Tourism?",
-        "Edo State Arts, Culture and Tourism address please",
-        "Where is the Edo State Arts, Culture and Tourism?",
-        "Edo State Arts, Culture and Tourism office location?"
+        "What is the address of Edo State Arts, Culture andcreative economy?",
+        "Where can I find the Edo State Arts, Culture and creative economy?",
+        "Edo State Arts, Culture and creative economy address please",
+        "Where is the Edo State Arts, Culture and creative economy?",
+        "Edo State Arts, Culture and creative economy office location?"
       ],
       "responses": [
-        "The Edo State Arts, Culture and Tourism is located at Block D, 6th Floor, Secretariat Complex, Sapele Road, Benin City."
+        "The Edo State Arts, Culture and creative economy is located at Block D, 6th Floor, Secretariat Complex, Sapele Road, Benin City."
       ]
     },
     {
@@ -589,16 +603,16 @@
       ]
     },
     {
-      "tag": "ministry_of_business_trade_and_cooperative",
+      "tag": "ministry_of_business_trade_and_investment",
       "patterns": [
-        "What is the address of Ministry Of Business, Trade and Cooperative?",
-        "Where can I find the Ministry Of Business, Trade and Cooperative?",
-        "Ministry Of Business, Trade and Cooperative address please",
-        "Where is the Ministry Of Business, Trade and Cooperative?",
-        "Ministry Of Business, Trade and Cooperative office location?"
+        "What is the address of Ministry Of Business, Trade and Investment?",
+        "Where can I find the Ministry Of Business, Trade and Investment?",
+        "Ministry Of Business, Trade and Investment address please",
+        "Where is the Ministry Of Business, Trade and Investment?",
+        "Ministry Of Business, Trade and Investment office location?"
       ],
       "responses": [
-        "The Ministry Of Business, Trade and Cooperative is located at 7th floor , Block c Secretariant Complex, Sapele Road, Benin City, Edo State."
+        "The Ministry Of Business, Trade and Investment is located at 7th floor , Block c Secretariant Complex, Sapele Road, Benin City, Edo State."
       ]
     },
     {
@@ -627,20 +641,20 @@
         "Where is Edo MOE?"
       ],
       "responses": [
-        "The Ministry Of Education is located at Block B, 6th Floor Secretariat  Complex, Sapele Road, Benin City."
+        "The Ministry Of Education is located at is located at Education Hub, Iyaro, New Benin,   Benin City."
       ]
     },
     {
-      "tag": "ministry_of_youth_and_humanitarian_affair",
+      "tag": "ministry_of_humanitarian_affairs_Poverty_Alleviation",
       "patterns": [
-        "What is the address of Ministry Of Youth And Humanitarian Affair?",
-        "Where can I find the Ministry Of Youth And Humanitarian Affair?",
-        "Ministry Of Youth And Humanitarian Affair address please",
-        "Where is the Ministry Of Youth And Humanitarian Affair?",
-        "Ministry Of Youth And Humanitarian Affair office location?"
+        "What is the address of Ministry Of Humanitarian Affair and Poverty Alleviation?",
+        "Where can I find the Ministry Of Humanitarian Affair and Poverty Alleviation?",
+        "Ministry Of Humanitarian Affair and Poverty Alleviation address please",
+        "Where is the Ministry Of Humanitarian Affair and Poverty Alleviation?",
+        "Ministry Of Ministry Of Humanitarian Affair and Poverty Alleviation office location?"
       ],
       "responses": [
-        "The Ministry Of Youth And Humanitarian Affair is located at 2nd Floor, Block B, Secretariat Complex, Sapele Road, Benin City."
+        "The Ministry Of Humanitarian Affair and Poverty Alleviationis located at 2nd Floor, Block B, Secretariat Complex, Sapele Road, Benin City."
       ]
     },
     {
@@ -904,7 +918,7 @@
         "Where is EDODiDA's office?"
       ],
       "responses": [
-        "The Edo State Digital Governance and Data Management Agency is located at No. 17A Vincent Agenmomen Road, GRA,  Beside 4 Brigade, ESIPO Compound, Benin City.."
+        "The Edo State Digital Governance and Data Management Agency is located at Block B 2nd Floor, Secretariat Complex, Sapele Road, Benin City.."
       ]
     },
     {
