@@ -13,17 +13,30 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
-    {
-      "tag": "Ministry_of_Youth_Affairs",
+     {
+      "tag": "The ",
       "patterns": [
-        "What is the address of the Ministry of Youth Affairs?",
+        "What is the address of Office of the Governor?",
+        "Where can I find the Office of the Governor?",
+        "Office of the  Governor address please",
+        "Where is the Office of the Governor?",
+        "Office of the  Governor office location?"
+      ],
+      "responses": [
+        "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
+      ]
+    },
+    {
+      "tag": "Ministry_of-sports_and_Youth_Affairs",
+      "patterns": [
+        "What is the address of the Ministry of Sport and  Youth Affairs?",
         "Where can I find the Ministry of Youth Affairs?",
-        "Ministry of Youth Affairs address please",
-        "Where is the Ministry of Youth Affairs?",
+        "Ministry of Sport and Youth Affairs address please",
+        "Where is the Ministry of Sport?",
         "Office of the  Ministry of Youth Affairs?"
       ],
       "responses": [
-        "The Ministry of Youth Affairs is located at 8th Floor, Block B, State Secrtetariat Complex, Sapele Road,  Benin City."
+        "The Ministry of Youth Affairs is located at 2nd Floor, Block B, State Secrtetariat Complex, Sapele Road,  Benin City."
       ]
     },
     
@@ -654,7 +667,7 @@
         "Ministry Of Ministry Of Humanitarian Affair and Poverty Alleviation office location?"
       ],
       "responses": [
-        "The Ministry Of Humanitarian Affair and Poverty Alleviationis located at 2nd Floor, Block B, Secretariat Complex, Sapele Road, Benin City."
+        "The Ministry Of Humanitarian Affair and Poverty Alleviationis located at 9th Floor, Block D, Secretariat Complex, Sapele Road, Benin City."
       ]
     },
     {
