@@ -683,18 +683,18 @@
       ]
     },
     {
-      "tag": "ministry_of_information_and_communication",
+      "tag": "ministry_of_information_and_Strategy",
       "patterns": [
-        "What is the address of Ministry Of Information And Communication (MIC)?",
-        "Where can I find the Ministry Of Information And Communication (MIC)?",
-        "Ministry Of Information And Communication address please(MIC)?",
-        "Where is the Ministry Of Information And Communication (MIC)?",
-        "Ministry Of Information And Communication office location(MIC)?",
-        "Where is MIC?",
-        "location of Edo MIC?"
+        "What is the address of Ministry Of Information And Strategy ?",
+        "Where can I find the Ministry Of Information And Communication ?",
+        "Ministry Of Information And Communication address please?",
+        "Where is the Ministry Of Information And Communication ?",
+        "Ministry Of Information And Communication office location?",
+        "Where is MIS?",
+        "location of Edo MIS?"
       ],
       "responses": [
-        "The Ministry Of Information And Communication is located at Block B, 4th Floor, Secretariat Complex, Sapele Road, Benin City."
+        "The Ministry Of Information And Strategy is located at Block B, 4th Floor, Secretariat Complex, Sapele Road, Benin City."
       ]
     },
     {
@@ -839,7 +839,7 @@
         "Office Of The Auditor General Local Government office location?"
       ],
       "responses": [
-        "The Office Of The Auditor General Local Government is located at Benin City, Edo State.."
+        "The Office Of The Auditor General Local Government is located at Ring Road, Benin City, Edo State.."
       ]
     },
     {
@@ -859,14 +859,14 @@
     {
       "tag": "traditional_medicine_board",
       "patterns": [
-        "What is the address of Traditional Medicine Board?",
-        "Where can I find the Traditional Medicine Board?",
+        "What is the address of Edo state Traditional Medicine Board?",
+        "Where can I find the  Edo state Traditional Medicine Board?",
         "Traditional Medicine Board address please",
         "Where is the Traditional Medicine Board?",
         "Traditional Medicine Board office location?"
       ],
       "responses": [
-        "The Traditional Medicine Board is located at 24 Airport Road, Benin City, Edo State."
+        "The Traditional Medicine Board is located at Block D, 1st Floor, Secretariat Complex, Benin City, Edo State."
       ]
     },
     {
@@ -932,7 +932,7 @@
         "Office Of The Auditor General (State) office location?"
       ],
       "responses": [
-        "The Office Of The Auditor General (State) is located at 11 Boundary Road, Benin City, Edo State."
+        "The Office Of The Auditor General  is located at Palm House, Block A, Secretariat Complex, Sapele Road, Benin City, Edo State."
       ]
     },
     {
