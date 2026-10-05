@@ -13,6 +13,60 @@
         "The Office of the  Governor is located at Government House,  Dennis Osadebey Avenue, GRA,  Benin City."
       ]
     },
+    {
+      "tag": "Ecological_funding_and_climate_change_commission",
+      "patterns": [
+        "What is the address of the Edo State Ecological Funding and Climate Change Commission?",
+        "Where can I find the Edo State Ecological Funding and Climate Change Commission?",
+        "Edo State Ecological Funding and Climate Change Commission address please",
+        "Where is the Ecological Commission?",
+        "Where Ecological Commission dey?"
+      ],
+      "responses": [
+        "The Edo State Ecological Commission is located at Block d 9th Floor, Secretariat Complex , Sapele Road,  Benin City."
+      ]
+    },
+      {
+      "tag": "Edo_State_Bursary_and_Scholarship_Board",
+      "patterns": [
+        "What is the address of the Edo State Bursary and Scholarship Board?",
+        "Where can I find the Edo State Bursaary and Scholarship Board ?",
+        "Edo State Bursary and Scholarship Board address please",
+        "Where is the Scholarship Board?",
+        "Where Bursary Board EBSB dey?",
+        "Where is EBSB ?"
+      ],
+      "responses": [
+        "The Edo State Bursary and Scholarship Board is located at the same Complex with  the Ministry of Education Iyaro, Benin City."
+      ]
+    },
+    {
+      "tag": "the_ministry_of_humanitarian_and _Poverty_Alleviation",
+      "patterns": [
+        "What is the address of the Ministry of Humanitarian affairs and  Poverty Alleviation?",
+        "Where can I find the Humanitarian affairs and  Poverty Alleviation ?",
+        "Office of the  Humanitarian affairs and  Poverty Alleviation address please",
+        "Where is the Ministry of the Humanitarian affairs?",
+        "Office of the  Poverty Alleviation  office location?"
+      ],
+      "responses": [
+        "The Ministry of Humanitarian Affairs and Poverty Alleviation is located at the  9th Floor Block D, Secretariat Complex Sapele Road,  Benin City."
+      ]
+    },
+    {
+      "tag": "the_ministry_of_special-duties_and _intergovernmental_relations",
+      "patterns": [
+        "What is the address of the Ministry of Special Duties and Intergovernmental Relations?",
+        "Where can I find the Ministry of Special Duties ?",
+        "Ministry of the  Special Duties and Intergovernmental Relations address please",
+        "Where is the  Office of the  Special Duties and Intergovernmental Relations?",
+        "Special Duties and Intergovernmental Relations  office location?"
+      ],
+      "responses": [
+        "The Ministry of Special Duties and Intergovernmental Relations  is located at the  8th Floor Block D, Secretariat Complex Sapele Road,  Benin City."
+      ]
+    },
+
      {
       "tag": "The ",
       "patterns": [
@@ -27,12 +81,12 @@
       ]
     },
     {
-      "tag": "Ministry_of-sports_and_Youth_Affairs",
+      "tag": "Ministry_of_Youth_Affairs",
       "patterns": [
-        "What is the address of the Ministry of Sport and  Youth Affairs?",
+        "What is the address of the Ministry of  Youth Affairs?",
         "Where can I find the Ministry of Youth Affairs?",
-        "Ministry of Sport and Youth Affairs address please",
-        "Where is the Ministry of Sport?",
+        "Ministry of  Youth Affairs address please",
+        "Where is the Ministry of Youth Affairs?",
         "Office of the  Ministry of Youth Affairs?"
       ],
       "responses": [
